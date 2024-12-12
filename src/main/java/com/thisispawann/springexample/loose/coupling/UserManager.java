@@ -2,7 +2,7 @@ package com.thisispawann.springexample.loose.coupling;
 
 public class UserManager {
 //    UserManager is tightly coupled with UserDatabase
-    private UserDataProvider userDataProvider;
+    private final UserDataProvider userDataProvider;
 
     public UserManager(UserDataProvider userDataProvider) {
         this.userDataProvider = userDataProvider;
